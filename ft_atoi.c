@@ -6,36 +6,34 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 12:50:38 by aamini            #+#    #+#             */
-/*   Updated: 2025/04/23 17:29:54 by aamini           ###   ########.fr       */
+/*   Updated: 2025/04/24 15:29:35 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+int	ft_atoi(const char *str)
 {
 	int	i;
 	int	sign;
-	int	count;
 	int	result;
 
-	result = 0;
 	i = 0;
 	sign = 1;
-	count = 0;
-	while (str[i] == ' ' || str[i] == '\t'
-		|| str[i] == '\n' || str[i] == '\v'
-		|| str[i] == '\r' || str[i] == '\f')
-		i ++;
-	while (str[i] == '-' || str[i] == '+')
+	result = 0;
+	while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
+		i++;
+	if (str[i] == '-')
 	{
-		if (str[i] == '-')
-			sign = -sign;
+		sign = -1;
 		i++;
 	}
-	while (str[i] >= '0' && str[i] <= '9')
+	else if (str[i] == '+')
+		i++;
+	while (ft_isdigit(str[i]))
 	{
-		result = (result * 10) + (str[i] - '0');
-		i ++;
+		result *= 10;
+		result += str[i] - '0';
+		i++;
 	}
-	return (sign * result);
+	return (result * sign);
 }
-
 

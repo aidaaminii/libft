@@ -6,11 +6,11 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 12:52:10 by aamini            #+#    #+#             */
-/*   Updated: 2025/04/23 15:21:33 by aamini           ###   ########.fr       */
+/*   Updated: 2025/04/24 15:05:30 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-ft_strlen(char *str)
+int ft_strlen(char const *str)
 {
 	int	count;
 
