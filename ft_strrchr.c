@@ -6,11 +6,13 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 12:52:24 by aamini            #+#    #+#             */
-/*   Updated: 2025/04/23 17:54:43 by aamini           ###   ########.fr       */
+/*   Updated: 2025/04/29 17:07:05 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char* strrchr( char* str, int chr );
+#include "libft.h"
+
+char* ft_strrchr( char* str, int chr )
 {
     int	i;
 
@@ -25,3 +27,17 @@ char* strrchr( char* str, int chr );
 	}
 	return (0);
 }
+
+// #include <stdio.h>
+// int main(void)
+// {
+//     char sentence[] = "Libft is fun!";
+//     char *found = ft_strrchr(sentence, 'i');
+
+//     if (found)
+//         printf("Last 'i' found at: %s\n", found);
+//     else
+//         printf("Character not found.\n");
+
+//     return 0;
+// }

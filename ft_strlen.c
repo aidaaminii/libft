@@ -6,11 +6,13 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 12:52:10 by aamini            #+#    #+#             */
-/*   Updated: 2025/04/24 15:05:30 by aamini           ###   ########.fr       */
+/*   Updated: 2025/04/29 16:48:19 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strlen(char const *str)
+#include "libft.h"
+
+int	ft_strlen(char const *str)
 {
 	int	count;
 
@@ -21,3 +23,10 @@ int ft_strlen(char const *str)
 	}
 	return (count);
 }
+// #include <stdio.h>
+// int   main()
+// {
+// 	printf( "%d" , ft_strlen("Hello, , # ,11"));
+// 	printf( "%d" , ft_strlen("dshhd"));
+// 	return (0);
+// }

@@ -6,13 +6,15 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 12:52:20 by aamini            #+#    #+#             */
-/*   Updated: 2025/04/23 17:47:18 by aamini           ###   ########.fr       */
+/*   Updated: 2025/04/29 16:05:57 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *strnstr(const char *big, const char *little, size_t len);
+#include "libft.h"
+
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-    size_t	i;
+	size_t	i;
 	size_t	j;
 
 	if (*little == '\0')
@@ -30,3 +32,8 @@ char *strnstr(const char *big, const char *little, size_t len);
 	}
 	return (0);
 }
+// int main(void)
+// {
+// 	write(1, ft_strnstr("jojo bala", "jojo", 10), 6);
+// 	return 0;
+// }

@@ -6,10 +6,11 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 12:52:06 by aamini            #+#    #+#             */
-/*   Updated: 2025/04/23 18:25:18 by aamini           ###   ########.fr       */
+/*   Updated: 2025/04/29 17:15:53 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
@@ -29,3 +30,17 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		i++;
 	return (i);
 }
+// #include <stdio.h>
+// int	main(void)
+// {
+// 	char	source[] = "Aida, Ahmadreza";
+// 	char	destination[30];
+// 	size_t	result;
+
+// 	result = ft_strlcpy(destination, source, sizeof(destination));
+
+// 	printf("Copied string: %s\n", destination);
+// 	printf("Length of source: %zu\n", result);
+
+// 	return (0);
+// }

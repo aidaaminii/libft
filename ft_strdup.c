@@ -6,9 +6,11 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 16:36:13 by aamini            #+#    #+#             */
-/*   Updated: 2025/04/24 14:54:32 by aamini           ###   ########.fr       */
+/*   Updated: 2025/04/29 16:52:00 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strdup(char *src)
 {
@@ -32,3 +34,10 @@ char	*ft_strdup(char *src)
 	}
 	return (copy);
 }
+// #include <stdio.h>
+// int main()
+// {
+// 	char str[] = "Helloo";
+// 	printf("%s" , ft_strdup(str));
+// 	return (0);
+// }
