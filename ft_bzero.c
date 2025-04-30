@@ -6,17 +6,18 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 12:51:02 by aamini            #+#    #+#             */
-/*   Updated: 2025/04/28 18:49:05 by aamini           ###   ########.fr       */
+/*   Updated: 2025/04/30 15:57:23 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	ft_bzero(void *s, size_t n)
 {
 	size_t	i;
 	char	*str;
-	
-	str = (char*)s;
+
+	str = (char *)s;
 	i = 0;
 	while (i < n)
 	{

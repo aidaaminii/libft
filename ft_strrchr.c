@@ -6,15 +6,15 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 12:52:24 by aamini            #+#    #+#             */
-/*   Updated: 2025/04/29 17:07:05 by aamini           ###   ########.fr       */
+/*   Updated: 2025/04/30 16:21:52 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char* ft_strrchr( char* str, int chr )
+char	*ft_strrchr( char*str, int chr )
 {
-    int	i;
+	int	i;
 
 	i = 0;
 	while (str[i])
