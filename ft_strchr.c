@@ -6,7 +6,7 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 12:51:57 by aamini            #+#    #+#             */
-/*   Updated: 2025/04/30 15:21:07 by aamini           ###   ########.fr       */
+/*   Updated: 2025/05/06 18:58:26 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,14 @@ char	*ft_strchr(const char *s, int c)
 
 	i = 0;
 	str = (char *)s;
-	while (str[i] != '\0' )
+	while (str[i] != '\0')
 	{
-		if (str[i] == c)
+		if ((unsigned char)str[i] == (unsigned char)c)
 			return (str + i);
 		i++;
 	}
+	if ((unsigned char)c == '\0')
+		return (str + i);
 	return (NULL);
 }
 
@@ -33,4 +35,4 @@ char	*ft_strchr(const char *s, int c)
 // {
 //     printf("%s" , ft_strchr("jojo bala", 'a'));
 //     return 0;
-// }
+// }"iuuohu\0ijij" 

@@ -6,7 +6,7 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 13:49:57 by aamini            #+#    #+#             */
-/*   Updated: 2025/04/28 18:49:34 by aamini           ###   ########.fr       */
+/*   Updated: 2025/05/06 18:51:22 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,12 @@ void	*ft_calloc(size_t count, size_t size)
 	new_multiply = multiply;
 	ptr = NULL;
 	if (count == 0 || size == 0)
-		return (NULL);
+	{
+		ptr = (void *)malloc(0);
+		if (!ptr)
+			return (NULL);
+		return (ptr);
+	}
 	total_size = count * size;
 	if (total_size != new_multiply)
 		return (NULL);
@@ -32,9 +37,7 @@ void	*ft_calloc(size_t count, size_t size)
 	{
 		ptr = (void *)malloc(total_size);
 		if (!ptr)
-		{
 			return (NULL);
-		}
 		ft_bzero(ptr, total_size);
 		return (ptr);
 	}

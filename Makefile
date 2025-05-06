@@ -15,7 +15,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
+$(NAME): $(OBJS) libft.h
 	ar rcs $(NAME) $(OBJS)
 
 test: $(NAME)

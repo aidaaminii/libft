@@ -6,7 +6,7 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 17:35:00 by aamini            #+#    #+#             */
-/*   Updated: 2025/05/03 17:35:00 by aamini           ###   ########.fr       */
+/*   Updated: 2025/05/06 15:26:34 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,35 +14,32 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-    char    buffer[12];
-    int     i;
-    long    num;
-    
-    if (n == 0)
-    {
-        ft_putchar_fd('0', fd);
-        return;
-    }
-    
-    num = n;
-    if (num < 0)
-    {
-        ft_putchar_fd('-', fd);
-        num = -num;
-    }
-    
-    i = 0;
-    while (num > 0)
-    {
-        buffer[i] = (num % 10) + '0';
-        num /= 10;
-		i++;
-    }
-    
-	i = i - 1;
-    while (i > 0) 
+	char	buffer[12];
+	int		i;
+	long	num;
+
+	if (n == 0)
 	{
-        ft_putchar_fd(buffer[i], fd);
+		ft_putchar_fd('0', fd);
+		return ;
+	}
+	num = n;
+	if (num < 0)
+	{
+		ft_putchar_fd('-', fd);
+		num = -num;
+	}
+	i = 0;
+	while (num > 0)
+	{
+		buffer[i] = (num % 10) + '0';
+		num /= 10;
+		i++;
+	}
+	i = i - 1;
+	while (i > 0)
+	{
+		ft_putchar_fd(buffer[i], fd);
 		i--;
 	}
 }
