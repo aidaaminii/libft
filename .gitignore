@@ -1,0 +1,23 @@
+# Compiled output
+a.out
+main.c
+
+# Object files
+*.o
+
+# Library files
+*.a
+
+# Editor backup files
+*~
+*.swp
+*.swo
+
+# MacOS system files
+.DS_Store
+
+# Test program
+test_program
+
+# Ignore VSCode files
+.vscode
