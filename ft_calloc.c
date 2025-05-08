@@ -20,19 +20,17 @@ void	*ft_calloc(size_t count, size_t size)
 
 	total_size = count * size;
 	ptr = NULL;
-	if (count == 0 || size == 0)
+	if (total_size == 0)
 	{
-		ptr = (void *)malloc(0);
-		if (!ptr)
-			return (NULL);
+		ptr = malloc(0);
 		return (ptr);
 	}
 	if (INT_MAX < total_size)
 		return (NULL);
 	else
 	{
-		ptr = (void *)malloc(total_size);
-		if (!ptr)
+		ptr = malloc(total_size);
+		if (ptr == NULL)
 			return (NULL);
 		ft_bzero(ptr, total_size);
 		return (ptr);

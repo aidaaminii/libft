@@ -42,7 +42,7 @@ void	ft_bzero(void *s, size_t n)
 //         if (str[i])
 //             printf("%c", str[i]);
 //         else
-//             printf("\\0");
+//             printf("null");
 //     }
 //     printf("\n");
 
