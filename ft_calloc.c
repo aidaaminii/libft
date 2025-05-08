@@ -6,22 +6,19 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 13:49:57 by aamini            #+#    #+#             */
-/*   Updated: 2025/05/06 18:51:22 by aamini           ###   ########.fr       */
+/*   Updated: 2025/05/08 16:28:15 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-// #include <stdio.h>
+#include <stdio.h>
 
 void	*ft_calloc(size_t count, size_t size)
 {
 	void	*ptr;
 	size_t	total_size;
-	int		multiply;
-	size_t	new_multiply;
 
-	multiply = count * size;
-	new_multiply = multiply;
+	total_size = count * size;
 	ptr = NULL;
 	if (count == 0 || size == 0)
 	{
@@ -30,8 +27,7 @@ void	*ft_calloc(size_t count, size_t size)
 			return (NULL);
 		return (ptr);
 	}
-	total_size = count * size;
-	if (total_size != new_multiply)
+	if (INT_MAX < total_size)
 		return (NULL);
 	else
 	{
@@ -42,15 +38,15 @@ void	*ft_calloc(size_t count, size_t size)
 		return (ptr);
 	}
 }
-
 // #include <stdio.h>
 // int main(void)
 // {
-// 	char *array = (char *)ft_calloc(21263541325, 8);
+// 	int size = 12;
+// 	char *array = (char *)ft_calloc(size, 1);
 // 	int i = 0;
 // 	if(array)
 // 	{
-// 		while(i < 32)
+// 		while(i < size)
 // 		{
 // 			printf("%d", array[i]);
 // 			i++;

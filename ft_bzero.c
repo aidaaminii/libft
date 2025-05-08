@@ -6,7 +6,7 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 12:51:02 by aamini            #+#    #+#             */
-/*   Updated: 2025/04/30 15:57:23 by aamini           ###   ########.fr       */
+/*   Updated: 2025/05/08 19:04:20 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,10 @@ void	ft_bzero(void *s, size_t n)
 // #include <strings.h> 
 // int main(void)
 // {
-//     char str[20] = "Hello, World!";
+//     char str[20] = "aida, amini!";
 //     printf("Before bzero: %s\n", str);
 
-//     bzero(str + 5, 5); 
+//     bzero(str + 4, 4); 
 
 //     printf("After bzero: ");
 //     for (int i = 0; i < 20; i++)

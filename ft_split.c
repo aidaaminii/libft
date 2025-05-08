@@ -6,7 +6,7 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 16:40:00 by aamini            #+#    #+#             */
-/*   Updated: 2025/05/03 16:40:00 by aamini           ###   ########.fr       */
+/*   Updated: 2025/05/08 16:23:56 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -112,3 +112,18 @@ char	**ft_split(char const *s, char c)
 	result[word_count] = NULL;
 	return (result);
 }
+
+// #include <stdio.h>
+// int main ()
+// {
+// 	char *str = "It.is.my.str.ing";
+// 	char c = 'm';
+// 	char **splitedstrings = ft_split(str, c);
+// 	int i = 0;
+// 	while(splitedstrings[i])
+// 	{
+// 		printf("%s \n" , splitedstrings[i]);
+// 		i++;
+// 	}
+// 	return (0);
+// }

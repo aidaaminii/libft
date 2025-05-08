@@ -6,7 +6,7 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 12:50:38 by aamini            #+#    #+#             */
-/*   Updated: 2025/05/06 15:33:29 by aamini           ###   ########.fr       */
+/*   Updated: 2025/05/08 18:14:26 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,24 +40,14 @@ int	ft_atoi(const char *str)
 }
 
 // #include <stdio.h> 
-// #include "libft.h"  
-// 	int	main(void)
+// int	main(void)
 // {
-// 	char *str1 = "42";
-// 	char *str2 = "    -123";
-// 	char *str3 = "+4567";
-// 	char *str4 = "   2147483647";
-// 	char *str5 = "-2147483648";
-// 	char *str6 = "   +0";
-// 	char *str7 = "   00123";
-
-// 	printf("str1: %d\n", ft_atoi(str1));
-// 	printf("str2: %d\n", ft_atoi(str2));
-// 	printf("str3: %d\n", ft_atoi(str3));
-// 	printf("str4: %d\n", ft_atoi(str4));
-// 	printf("str5: %d\n", ft_atoi(str5));
-// 	printf("str6: %d\n", ft_atoi(str6));
-// 	printf("str7: %d\n", ft_atoi(str7));
-
+// 	printf("1: %d\n", ft_atoi("42"));
+// 	printf("2: %d\n", ft_atoi("   -123"));
+// 	printf("3: %d\n", ft_atoi("+456"));
+// 	printf("4: %d\n", ft_atoi("   +0"));
+// 	printf("5: %d\n", ft_atoi("   00123"));
+// 	printf("6: %d\n", ft_atoi("abc123"));     
+// 	printf("7: %d\n", ft_atoi("123abc"));
 // 	return (0);
 // }

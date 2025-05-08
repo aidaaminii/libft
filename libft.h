@@ -6,7 +6,7 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 12:50:00 by aamini            #+#    #+#             */
-/*   Updated: 2025/04/30 18:00:00 by aamini           ###   ########.fr       */
+/*   Updated: 2025/05/08 16:31:54 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 # include <stdlib.h>
 # include <stddef.h>
 # include <unistd.h>
+# include <limits.h>
 
 /* Part 1 - Libc functions */
 

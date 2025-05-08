@@ -6,7 +6,7 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 17:35:00 by aamini            #+#    #+#             */
-/*   Updated: 2025/05/06 15:26:34 by aamini           ###   ########.fr       */
+/*   Updated: 2025/05/08 17:13:41 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,27 +32,24 @@ void	ft_putnbr_fd(int n, int fd)
 	i = 0;
 	while (num > 0)
 	{
-		buffer[i] = (num % 10) + '0';
+		buffer[i++] = (num % 10) + '0';
 		num /= 10;
-		i++;
 	}
-	i = i - 1;
-	while (i > 0)
+	while (--i >= 0)
 	{
 		ft_putchar_fd(buffer[i], fd);
-		i--;
 	}
 }
 
 // int main(void)
 // {
 // 	// Write to stdout (terminal)
-// 	ft_putnbr_fd(42, 1);
+// 	ft_putnbr_fd(2147483647, 1);
 // 	ft_putchar_fd('\n', 1);
-// 	ft_putnbr_fd(-42, 1);
+// 	ft_putnbr_fd(-2147483648, 1);
 // 	ft_putchar_fd('\n', 1);
 // 	ft_putnbr_fd(0, 1);
 // 	ft_putchar_fd('\n', 1);
-// 	ft_putchar_fd('\n', 1);
+// 	ft_putnbr_fd(-6516541, 1);
 // 	return (0);
 // }

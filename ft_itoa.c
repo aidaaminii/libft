@@ -6,21 +6,22 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 16:50:00 by aamini            #+#    #+#             */
-/*   Updated: 2025/05/03 16:50:00 by aamini           ###   ########.fr       */
+/*   Updated: 2025/05/08 17:05:15 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 static int	get_num_length(int n)
 {
 	int	len;
 
 	len = 0;
-	if (n <= 0)
-	{
+	if (n == 0)
 		return (1);
-	}
+	if (n < 0)
+		len++;
 	while (n != 0)
 	{
 		n = n / 10;
@@ -56,3 +57,10 @@ char	*ft_itoa(int n)
 	}
 	return (str);
 }
+
+// int	main(void)
+// {
+// 	printf("%s\n", ft_itoa(-10004));
+// 	printf("%s\n", ft_itoa(-42));
+// 	return (0);
+// }
