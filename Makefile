@@ -18,15 +18,6 @@ all: $(NAME)
 $(NAME): $(OBJS) libft.h
 	ar rcs $(NAME) $(OBJS)
 
-test: $(NAME)
-	@$(CC) $(CFLAGS) main.c -L. -lft -o test_program
-	@echo "------------------------------------------------"
-	@echo "------------------------------------------------"
-	@echo "------------------------------------------------"
-	@./test_program
-	@rm -f test_program
-	@make clean
-
 clean:
 	@rm -f $(OBJS)
 

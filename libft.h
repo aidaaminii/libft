@@ -6,7 +6,7 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 12:50:00 by aamini            #+#    #+#             */
-/*   Updated: 2025/05/08 16:31:54 by aamini           ###   ########.fr       */
+/*   Updated: 2025/05/09 19:31:59 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,10 @@ int				ft_isprint(int c);
 /* String manipulation functions */
 size_t			ft_strlen(char const *str);
 size_t			ft_strlcpy(char *dst, const char *src, size_t size);
-unsigned int	ft_strlcat(char *dest, const char *src, unsigned int size);
+size_t			ft_strlcat(char *dest, const char *src, size_t size);
 char			*ft_strchr(const char *s, int c);
 char			*ft_strrchr(char *str, int chr);
-int				ft_strncmp(char *s1, char *s2, unsigned int n);
+int				ft_strncmp(const char *s1, const char *s2, size_t n);
 char			*ft_strnstr(const char *big, const char *little, size_t len);
 char			*ft_strdup(const char *src);
 

@@ -6,12 +6,11 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 13:49:57 by aamini            #+#    #+#             */
-/*   Updated: 2025/05/08 16:28:15 by aamini           ###   ########.fr       */
+/*   Updated: 2025/05/09 16:34:49 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 void	*ft_calloc(size_t count, size_t size)
 {

@@ -6,12 +6,12 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 16:50:00 by aamini            #+#    #+#             */
-/*   Updated: 2025/05/08 17:05:15 by aamini           ###   ########.fr       */
+/*   Updated: 2025/05/09 16:34:02 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
+// #include <stdio.h>
 
 static int	get_num_length(int n)
 {

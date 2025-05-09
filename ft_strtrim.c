@@ -6,51 +6,36 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 16:20:00 by aamini            #+#    #+#             */
-/*   Updated: 2025/05/03 16:20:00 by aamini           ###   ########.fr       */
+/*   Updated: 2025/05/09 17:28:05 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static int	ft_inset(char c, char const *set)
-{
-	size_t	i;
-
-	i = 0;
-	while (set[i])
-	{
-		if (set[i] == c)
-			return (1);
-		i++;
-	}
-	return (0);
-}
+// #include <stdio.h>
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*trimmed;
-	size_t	start;
-	size_t	end;
+	char	*result;
 	size_t	i;
+	size_t	j;
 
-	if (s1 == NULL || set == NULL)
-		return (NULL);
-	start = 0;
-	while (s1[start] && ft_inset(s1[start], set))
-		start++;
-	end = ft_strlen(s1);
-	while (end > start && ft_inset(s1[end - 1], set))
-		end--;
-	trimmed = (char *)malloc(sizeof(char) * (end - start + 1));
-	if (trimmed == NULL)
-		return (NULL);
 	i = 0;
-	while (start < end)
-	{
-		trimmed[i] = s1[start];
+	j = ft_strlen(s1);
+	while (s1[i] && ft_strchr(set, s1[i]))
 		i++;
-		start++;
-	}
-	trimmed[i] = '\0';
-	return (trimmed);
+	while (s1[j - 1] && ft_strchr(set, s1[j - 1]))
+		j--;
+	if (i > j)
+		i = j;
+	result = malloc (j - i + 1);
+	if (!result)
+		return (NULL);
+	ft_strlcpy(result, s1 + i, j - i + 1);
+	return (result);
 }
+
+// int	main(void)
+// {
+// 	write(1, ft_strtrim(" !AIDA! ", "! ."), 9);
+// 	return 0;
+// }

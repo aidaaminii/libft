@@ -6,7 +6,7 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 16:00:00 by aamini            #+#    #+#             */
-/*   Updated: 2025/05/03 16:00:00 by aamini           ###   ########.fr       */
+/*   Updated: 2025/05/09 16:44:02 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,3 +37,21 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr[i] = '\0';
 	return (substr);
 }
+
+// #include <stdio.h>
+// int	main(void)
+// {
+// 	char	*text = "Hello, Aida!";
+// 	char	*result;
+
+// 	result = ft_substr(text, 7, 4);
+// 	if (result)
+// 	{
+// 		printf("Substring: %s\n", result);  
+// 		free(result);
+// 	}
+// 	else
+// 		printf("Substring failed!\n");
+
+// 	return (0);
+// }

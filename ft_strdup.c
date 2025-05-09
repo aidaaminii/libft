@@ -6,7 +6,7 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 16:36:13 by aamini            #+#    #+#             */
-/*   Updated: 2025/04/29 16:52:00 by aamini           ###   ########.fr       */
+/*   Updated: 2025/05/09 19:21:54 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,11 +19,7 @@ char	*ft_strdup(const char *src)
 	char	*copy;
 
 	i = 0;
-	size = 0;
-	while (src[size] != '\0')
-	{
-		size ++;
-	}
+	size = ft_strlen(src);
 	copy = (char *)malloc(size + 1);
 	if (!copy)
 		return (0);
