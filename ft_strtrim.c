@@ -33,7 +33,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	end;
 	size_t	i;
 
-	if (!s1 || !set)
+	if (s1 == NULL || set == NULL)
 		return (NULL);
 	start = 0;
 	while (s1[start] && ft_inset(s1[start], set))
@@ -42,7 +42,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 	while (end > start && ft_inset(s1[end - 1], set))
 		end--;
 	trimmed = (char *)malloc(sizeof(char) * (end - start + 1));
-	if (!trimmed)
+	if (trimmed == NULL)
 		return (NULL);
 	i = 0;
 	while (start < end)

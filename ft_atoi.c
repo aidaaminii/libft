@@ -30,7 +30,7 @@ int	ft_atoi(const char *str)
 	}
 	else if (str[i] == '+')
 		i++;
-	while (ft_isdigit(str[i]))
+	while (ft_isdigit(str[i]) == 1)
 	{
 		result *= 10;
 		result += str[i] - '0';
