@@ -17,8 +17,8 @@ void	*ft_memset(void *b, int c, size_t len)
 	size_t			i;
 	unsigned char	*str;
 
-	i = 0;
 	str = (unsigned char *)b;
+	i = 0;
 	while (i < len)
 	{
 		str[i] = (unsigned char)c;
@@ -28,18 +28,11 @@ void	*ft_memset(void *b, int c, size_t len)
 }
 
 // #include <stdio.h>
-// #include <string.h>
 // int main(void)
 // {
-// 	char str[50] = "Hello World!";
-// 	printf("Before memset: %s\n", str);
-//
-// 	ft_memset(str + 5, '*', 5);
+// 	char str[4] = "Aida";
+// 	printf("Before ft_memset: %s\n", str);
+// 	ft_memset(str + 1, '*', 2);
 // 	printf("After ft_memset: %s\n", str);
-//
-// 	char str2[50] = "Hello World!";
-// 	memset(str2 + 5, '*', 5);
-// 	printf("After memset: %s\n", str2);
-//
 // 	return (0);
 // }

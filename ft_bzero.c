@@ -26,20 +26,16 @@ void	ft_bzero(void *s, size_t n)
 	}
 }
 
-// #include <stdio.h> 
-// #include <string.h> 
-// #include <strings.h> 
+// #include <stdio.h>
 // int main(void)
 // {
-//     char str[20] = "aida, amini!";
+//     char str[12] = "aida, amini!";
 //     printf("Before bzero: %s\n", str);
-
-//     bzero(str + 4, 4); 
-
+//     ft_bzero(str, 4); 
 //     printf("After bzero: ");
-//     for (int i = 0; i < 20; i++)
+//     for (int i = 0; i < 12; i++)
 //     {
-//         if (str[i])
+//         if (str[i] != '\0')
 //             printf("%c", str[i]);
 //         else
 //             printf("null");

@@ -14,31 +14,12 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	buffer[12];
-	int		i;
-	long	num;
+	char	*str;
 
-	if (n == 0)
-	{
-		ft_putchar_fd('0', fd);
+	str = ft_itoa(n);
+	if (str == NULL)
 		return ;
-	}
-	num = n;
-	if (num < 0)
-	{
-		ft_putchar_fd('-', fd);
-		num = -num;
-	}
-	i = 0;
-	while (num > 0)
-	{
-		buffer[i++] = (num % 10) + '0';
-		num /= 10;
-	}
-	while (--i >= 0)
-	{
-		ft_putchar_fd(buffer[i], fd);
-	}
+	ft_putstr_fd(str, fd);
 }
 
 // int main(void)

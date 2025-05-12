@@ -23,7 +23,6 @@ void	ft_putendl_fd(char *s, int fd)
 // int main(void)
 // {
 // 	// Write to stdout (terminal)
-// 	ft_putendl_fd("Hello, world!", 1);
-// 	ft_putendl_fd("This is a new line", 1);
+// 	ft_putendl_fd("Aida Amini!", 1);
 // 	return (0);
 // }

@@ -23,6 +23,5 @@ clean:
 
 fclean: clean
 	rm -f $(NAME)
-	rm -f test_program
 
 re: fclean all

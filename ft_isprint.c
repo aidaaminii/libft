@@ -20,10 +20,6 @@ int	ft_isprint(int c)
 // int	main(void)
 // {
 // 	printf("Test with 'A': %d\n", ft_isprint('A')); 
-// 	printf("Test with ' ': %d\n", ft_isprint(' '));  
-// 	printf("Test with '~': %d\n", ft_isprint('~'));  
-// 	printf("Test with '\\n' (newline): %d\n", ft_isprint('\n'));  
 // 	printf("Test with '\\t' (tab): %d\n", ft_isprint('\t'));  
-// 	printf("Test with 10: %d\n", ft_isprint(10));  
 // 	return (0);
 // }
