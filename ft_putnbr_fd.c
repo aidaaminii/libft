@@ -6,7 +6,7 @@
 /*   By: aamini <aamini@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/03 17:35:00 by aamini            #+#    #+#             */
-/*   Updated: 2025/05/08 17:13:41 by aamini           ###   ########.fr       */
+/*   Updated: 2025/05/13 15:17:46 by aamini           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,23 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	*str;
-
-	str = ft_itoa(n);
-	if (str == NULL)
+	if (n == -2147483648)
+	{
+		ft_putstr_fd("-2147483648", fd);
 		return ;
-	ft_putstr_fd(str, fd);
+	}
+	if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		n *= -1;
+	}
+	if (n < 10)
+		ft_putchar_fd((n + '0'), fd);
+	if (n >= 10)
+	{
+		ft_putnbr_fd(n / 10, fd);
+		ft_putchar_fd((n % 10 + '0'), fd);
+	}
 }
 
 // int main(void)
